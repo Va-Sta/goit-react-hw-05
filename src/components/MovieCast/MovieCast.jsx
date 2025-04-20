@@ -26,7 +26,7 @@ const MovieCast = () => {
 
   return (
     <ul className={css.castList}>
-      {movieCredits.cast &&
+      {movieCredits.cast && movieCredits.cast.length > 0 ? (
         movieCredits.cast.map((item) => (
           <li key={item.id} className={css.castItem}>
             <img
@@ -43,7 +43,10 @@ const MovieCast = () => {
               <div className={css.castCharacter}>as {item.character}</div>
             </div>
           </li>
-        ))}
+        ))
+      ) : (
+        <p>No cast available for this movie.</p>
+      )}
     </ul>
   );
 };
