@@ -57,8 +57,10 @@ const MoviesPage = () => {
           </button>
         </form>
       </h2>
-      {movies.results && movies.results.length > 0 && (
+      {movies.results && movies.results.length > 0 ? (
         <MovieList list={movies} />
+      ) : (
+        query !== "" && <p className={css.noMovies}>No movies found</p>
       )}
       <div className={css.pager}>
         {page > 1 && (

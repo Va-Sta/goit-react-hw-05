@@ -1,7 +1,6 @@
 .form {
   display: flex;
   align-items: left;
-  background: white;
   width: 700px;
   gap: 10px;
 }
@@ -16,29 +15,6 @@
   padding: 4px 15px;
 }
 
-.button {
-  all: unset;
-  cursor: pointer;
-  border-radius: 8px;
-  width: 120px;
-  height: 40px;
-  background: gray;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  color: #fbfbfb;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button:hover,
-.button:focus {
-  background: rgb(66, 65, 65);
-  border: none;
-}
-
 .pager {
   display: flex;
   gap: 10px;
@@ -46,7 +22,8 @@
   justify-content: center;
 }
 
-.pager a {
+.pager a,
+.button {
   all: unset;
   cursor: pointer;
   border-radius: 8px;
@@ -64,6 +41,15 @@
 }
 
 .pager a:hover,
-.pager a:focus {
+.pager a:focus,
+.button:hover,
+.button:focus {
   background: rgb(66, 65, 65);
+  outline: none;
+}
+
+.noMovies {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
 }
