@@ -4,7 +4,7 @@
 }
 
 .link {
-  color: black;
+  color: #bbb;
   text-decoration: none;
   font-size: 22px;
   position: relative;
@@ -26,7 +26,7 @@
 }
 
 .link:hover {
-  color: black;
+  color: #bbb;
 }
 
 .active {
