@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* .backButton {
+  align-self: flex-start;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: gray;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 250ms ease;
+} */
+.backButton {
+  all: unset;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  background: gray;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #fbfbfb;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backButton:hover {
+  background-color: rgb(66, 65, 65);
+  color: white;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+}
+
+.poster {
+  height: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.infoTitle {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.infoText {
+  font-size: 18px;
+  color: #555;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.infoText span {
+  font-size: 18px;
+  color: #555;
+}
+
+.additionalInfo {
+  text-align: left;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.additionalInfo a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 250ms ease;
+}
+
+.additionalInfo a:hover {
+  color: black;
+}

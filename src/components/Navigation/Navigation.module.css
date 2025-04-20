@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  gap: 4px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.active {
+  color: orange;
+}
+.active:hover {
+  color: orange;
+}
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.link:hover a {
+  color: inherit;
+}

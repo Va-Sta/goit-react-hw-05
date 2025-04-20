@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+}
+
+body {
+  place-items: start;
+}
+
+h2 {
+  display: flex;
+  font-size: 22px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ddd;
+  margin: 0;
+}
